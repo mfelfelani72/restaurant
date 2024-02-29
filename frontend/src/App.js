@@ -3,14 +3,42 @@ import { IconOutlineMail1 } from "../src/icons/IconOutlineMail1";
 import { IconOutlinePhone1 } from "../src/icons/IconOutlinePhone1";
 import { OriginalLogo } from "../src/components/OriginalLogo";
 import { Button } from "../src/components/Button";
+import { useTranslation } from "react-i18next";
+
+import React, { useState } from 'react';
+
+
+import useGeneralContext from "./context/GeneralContext";
+
+
+const Languages = [
+  { id: 'rtl', name: 'fa' },
+  { id: 'ltr', name: 'en' },
+];
 
 function App() {
+
+  const {
+    setLng,
+    setCurrentLng,
+    currentLng,
+  } = useGeneralContext();
+
+  const handleChange = (e) => {
+    
+    setLng(Languages[e.target.value])
+    // setLng(Languages[1])
+  }
+
+
+  const { t } = useTranslation();
   return (
     <>
       <div className="flex flex-col">
 
 
         {/* top bar */}
+
 
         <div className="w-screen px-[37px] py-[5px] top-0 bg-[#4c4c4c]">
 
@@ -66,6 +94,22 @@ function App() {
                   />
                 </div>
               </a>
+              
+              <select
+
+                id="language"
+                onChange={handleChange}
+                className="border border-gray-300 rounded-md px-1 focus:outline-none focus:border-rose-900"
+              >
+                 <option value="">{currentLng.name}</option>
+                {Languages.map((language, languageIdx) => (
+                 
+                  <option key={languageIdx} value={languageIdx}>
+                    {language.name}
+                  </option>
+
+                ))}
+              </select>
             </div>
 
           </div >
@@ -101,7 +145,9 @@ function App() {
             <div className="basis-1/2 justify-center inline-flex items-center">
               <div className="px-2 h-[30px] w-[60px] bg-[#dbdfd0] rounded-[34px]">
                 <div className="mt-[2px]">
-                  Home
+
+                  {t('home')}
+
                 </div>
               </div>
               <div className="px-2  h-[30px] w-[60px]">
