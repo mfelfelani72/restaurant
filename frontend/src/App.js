@@ -1,186 +1,76 @@
+import React, { useEffect, useRef } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
-import { IconOutlineMail1 } from "../src/icons/IconOutlineMail1";
-import { IconOutlinePhone1 } from "../src/icons/IconOutlinePhone1";
-import { OriginalLogo } from "../src/components/OriginalLogo";
-import { Button } from "../src/components/Button";
-import { useTranslation } from "react-i18next";
+import AdminPanel from "./Pages/admin/AdminPanel.jsx";
+import AuthPanel from "./Pages/auth/AuthPanel.jsx";
+import ThemePanel from "./Pages/theme/default/ThemePanel.jsx";
 
-import React, { useState } from 'react';
+import Page404 from "./components/general/Page404.jsx";
 
-
-import useGeneralContext from "./context/GeneralContext";
-
-
-const Languages = [
-  { id: 'rtl', name: 'fa' },
-  { id: 'ltr', name: 'en' },
-];
 
 function App() {
 
-  const {
-    setLng,
-    setCurrentLng,
-    currentLng,
-  } = useGeneralContext();
-
-  const handleChange = (e) => {
-    
-    setLng(Languages[e.target.value])
-    // setLng(Languages[1])
-  }
+  const navigate = useNavigate();
 
 
-  const { t } = useTranslation();
-  return (
-    <>
-      <div className="flex flex-col">
+  const location = useLocation();
+  const { hash, pathname, search } = location;
+
+  const adminRoutes = ["/admin", "/admin/ecommerce", "/admin/orders", "/admin/calendar", "/admin/employees", "/admin/stacked", "/admin/pyramid", "/admin/customers", "/admin/kanban", "/admin/line", "/admin/area", "/admin/bar", "/admin/pie", "/admin/financial", "/admin/color-picker", "/admin/color-mapping", "/admin/editor",];
 
 
-        {/* top bar */}
+  const authRoutes = ["/login", "/register", "/forgot-password", "/password-reset/:token"];
 
 
-        <div className="w-screen px-[37px] py-[5px] top-0 bg-[#4c4c4c]">
+  const themeRoutes = ["/"];
 
-          <div class="flex flex-wrap justify-center">
+  // Admin Panel
+  // if (adminRoutes.includes(pathname)) {
 
-            <div className="basis-1/4 inline-flex items-center justify-center">
-              <IconOutlinePhone1 className="" />
-              <div className="text-white text-[16px] px-2">
-                <a href="tel:+37498228414">+37498228414</a>
-              </div>
-            </div>
-            <div className="basis-1/4 inline-flex items-center justify-center">
-              <IconOutlineMail1 className="" />
-              <div className="text-white text-[16px] px-2">
-                yummy.food@gmail.com
-              </div>
-            </div>
-            <div className=" basis-1/4 items-center justify-center flex">
-              <a href="https://twitter.com/" target="_blank">
-                <div className="relative text-white w-[27.17px] h-[27.17px] px- bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-rose-800">
-                  <img
-                    className="absolute w-[15px] h-[15px] top-[6px] left-[7px]"
-                    alt="Logo twitter"
-                    src="https://c.animaapp.com/nDFk6xrj/img/logo-twitter-2-1@2x.png"
-                  />
-                </div>
-              </a>
-              <a href="https://www.facebook.com/" target="_blank">
-                <div className=" relative text-white w-[27.17px] h-[27.17px] px-2 bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-rose-800">
+  //   if (user && user.role == "admin")
+  //     return (
+  //       <AdminPanel />
+  //     );
 
-                  <img
-                    className="absolute w-[10px] h-[15px] top-[6px] left-[9px]"
-                    alt="Logo fb simple"
-                    src="https://c.animaapp.com/nDFk6xrj/img/logo-fb-simple-2-1@2x.png"
-                  />
-                </div>
-              </a>
-              <a href="https://www.instagram.com/" target="_blank">
-                <div className=" relative text-white w-[27.17px] h-[27.17px] px-2 bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-rose-800">
-                  <img
-                    className="absolute w-[16px] h-[15px] top-[6px] left-[5px]"
-                    alt="Logo instagram"
-                    src="https://c.animaapp.com/nDFk6xrj/img/logo-instagram-1-1@2x.png"
-                  />
-                </div>
-              </a>
-              <a href="https://github.com/" target="_blank">
-                <div className=" relative text-white w-[27.17px] h-[27.17px] px-2 bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-rose-800">
-                  <img
-                    className="absolute w-[15px] h-[15px] top-[6px] left-[5px]"
-                    alt="Logo github"
-                    src="https://c.animaapp.com/nDFk6xrj/img/logo-github-1-1@2x.png"
-                  />
-                </div>
-              </a>
-              
-              <select
-
-                id="language"
-                onChange={handleChange}
-                className="border border-gray-300 rounded-md px-1 focus:outline-none focus:border-rose-900"
-              >
-                 <option value="">{currentLng.name}</option>
-                {Languages.map((language, languageIdx) => (
-                 
-                  <option key={languageIdx} value={languageIdx}>
-                    {language.name}
-                  </option>
-
-                ))}
-              </select>
-            </div>
-
-          </div >
+  //   else if (user && user.role !== "admin" || !user) {
+  //     return (<Page404 />)
+  //     // <Page404 /> !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  //     //  hide login,register... page !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  //   }
+  // }
+  // // Admin Panel
 
 
-        </div >
+  // // Auth Panel
+  // else if (authRoutes.includes(pathname)) {
+  //   if (user) {
+  //     navigate(-1);
+  //     //  hide login,register... page !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  //   }
+  //   else {
+  //     return (
+  //       <AuthPanel />
+  //     )
+  //   }
+  // }
+  // // Auth Panel
 
-        {/* topbar */}
+  // // Theme Panel 
+  // else if (themeRoutes.includes(pathname)) {
+    return (
+      <ThemePanel />
+    )
+  // }
+  // // Theme Panel 
 
-        {/* menu */}
+  // // Errors
+  // else {
+  //   return (
+  //     <Page404 />
+  //   )
+  // }
+  // // Errors
 
-        <div className="w-screen px-[50px] py-[17px] left-0 bg-[#f1f1f1]">
-
-          <div className="flex flex-wrap justify-center lg:justify-start">
-
-            {/* logo */}
-            <div className="hidden basis-1/2 lg:flex items-center w-[400px] justify-start px-[100px]">
-              <img
-                className="w-[56px] h-[30px]"
-                alt="Japanese food"
-                src="https://c.animaapp.com/nDFk6xrj/img/japanese-food-1.svg"
-              />
-              <OriginalLogo
-                className="!ml-[-25px] !h-[30px] !w-[182.67px]"
-                divClassName="!text-[#474747] !tracking-[-0.40px] !text-[30px] !left-[15px] !leading-[29.3px] !top-[3px]"
-                hasHotFood={false}
-                text="Yummy Food"
-                type="main"
-              />
-            </div>
-
-            {/* menu */}
-            <div className="basis-1/2 justify-center inline-flex items-center">
-              <div className="px-2 h-[30px] w-[60px] bg-[#dbdfd0] rounded-[34px]">
-                <div className="mt-[2px]">
-
-                  {t('home')}
-
-                </div>
-              </div>
-              <div className="px-2  h-[30px] w-[60px]">
-                <div className="mt-[2px] text-center">
-                  Menu
-                </div>
-              </div>
-              <div className="px-2  h-[30px] w-[60px]">
-                <div className="mt-[2px] text-center">
-                  Blog
-                </div>
-              </div>
-              <div className="px-2  h-[30px] w-[60px]">
-                <div className="mt-[2px] text-center">
-                  About
-                </div>
-              </div>
-              <div className="px-2  h-[30px] w-[60px]">
-                <div className="mt-[2px] text-center">
-                  Contact
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-        {/* menu */}
-
-      </div>
-    </>
-  );
 }
 
 export default App;

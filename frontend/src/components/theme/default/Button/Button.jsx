@@ -4,8 +4,8 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 */
 
 import React from "react";
-import { IconOutlineArrowRight15 } from "../../icons/IconOutlineArrowRight15";
-import { IconOutlineCheckCircle3 } from "../../icons/IconOutlineCheckCircle3";
+import { IconOutlineArrowRight15 } from "../icons/IconOutlineArrowRight15";
+import { IconOutlineCheckCircle3 } from "../icons/IconOutlineCheckCircle3";
 
 export const Button = ({
   state,
