@@ -1,8 +1,8 @@
 import React from 'react'
-import { IconOutlineMail1 } from "./default/icons/IconOutlineMail1";
-import { IconOutlinePhone1 } from "./default/icons/IconOutlinePhone1";
+import { IconOutlineMail1 } from "./icons/IconOutlineMail1";
+import { IconOutlinePhone1 } from "./icons/IconOutlinePhone1";
 
-import useGeneralContext from "../../context/GeneralContext";
+import useGeneralContext from "../../../context/GeneralContext";
 
 
 const Languages = [

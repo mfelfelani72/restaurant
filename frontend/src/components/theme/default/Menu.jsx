@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { OriginalLogo } from "../../components/theme/default/OriginalLogo";
+import { OriginalLogo } from "./OriginalLogo";
 
 import { useTranslation } from "react-i18next";
 

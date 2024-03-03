@@ -1,7 +1,7 @@
 import React from 'react'
 
-import TopBar from "../../../components/theme/TopBar";
-import Menu from "../../../components/theme/Menu";
+import TopBar from "../../../components/theme/default/TopBar";
+import Menu from "../../../components/theme/default/Menu";
 
 function LandingPage() {
     return (
