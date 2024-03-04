@@ -1,8 +1,12 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
- 
+
 function CarouselWithContent() {
   return (
-    <Carousel className="">
+    <Carousel className=""
+      autoplay={true}
+      autoplayDelay={5000}
+      loop={true}
+    >
       <div className="relative h-[35rem] w-full">
         <img
           src="https://www.mastersgalleryfoods.com/wp-content/uploads/2023/04/MushroomSwiss_1438x679.jpg"

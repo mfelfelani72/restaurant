@@ -12,7 +12,9 @@ import { createRoot } from 'react-dom/client';
 const root = createRoot(document.getElementById('root'));
 
 root.render(
-  <BrowserRouter>
+  // <BrowserRouter basename="/restaurant">
+  // "homepage": "https://mfcloner.am/restaurant/",
+  <BrowserRouter basename="/">
     <GeneralProvider>
       <App />
     </GeneralProvider>
