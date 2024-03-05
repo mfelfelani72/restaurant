@@ -8,7 +8,7 @@ import CardLandingPage from '../../../components/theme/default/CardLandingPage';
 function LandingPage() {
     return (
         <>
-            <div className="flex flex-col">
+            <div className="flex flex-col overflow-x-hidden">
 
 
                 <TopBar />

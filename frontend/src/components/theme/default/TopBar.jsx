@@ -44,7 +44,7 @@ function TopBar() {
                 </div>
                 <div className=" basis-1/4 items-center justify-center flex">
                     <a href="https://twitter.com/" target="_blank">
-                        <div className="relative text-white w-[27.17px] h-[27.17px] px- bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-rose-800">
+                        <div className="relative text-white w-[27.17px] h-[27.17px] px- bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-[#ae353f]">
                             <img
                                 className="absolute w-[15px] h-[15px] top-[6px] left-[7px]"
                                 alt="Logo twitter"
@@ -53,7 +53,7 @@ function TopBar() {
                         </div>
                     </a>
                     <a href="https://www.facebook.com/" target="_blank">
-                        <div className=" relative text-white w-[27.17px] h-[27.17px] px-2 bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-rose-800">
+                        <div className=" relative text-white w-[27.17px] h-[27.17px] px-2 bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-[#ae353f]">
 
                             <img
                                 className="absolute w-[10px] h-[15px] top-[6px] left-[9px]"
@@ -63,7 +63,7 @@ function TopBar() {
                         </div>
                     </a>
                     <a href="https://www.instagram.com/" target="_blank">
-                        <div className=" relative text-white w-[27.17px] h-[27.17px] px-2 bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-rose-800">
+                        <div className=" relative text-white w-[27.17px] h-[27.17px] px-2 bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-[#ae353f]">
                             <img
                                 className="absolute w-[16px] h-[15px] top-[6px] left-[5px]"
                                 alt="Logo instagram"
@@ -72,7 +72,7 @@ function TopBar() {
                         </div>
                     </a>
                     <a href="https://github.com/" target="_blank">
-                        <div className=" relative text-white w-[27.17px] h-[27.17px] px-2 bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-rose-800">
+                        <div className=" relative text-white w-[27.17px] h-[27.17px] px-2 bg-[#f8f8f61f] rounded-[13.59px] mx-1 hover:bg-[#ae353f]">
                             <img
                                 className="absolute w-[15px] h-[15px] top-[6px] left-[5px]"
                                 alt="Logo github"
@@ -85,7 +85,7 @@ function TopBar() {
 
                         id="language"
                         onChange={handleChange}
-                        className="border border-gray-300 rounded-md px-1 focus:outline-none focus:border-rose-900"
+                        className="border border-gray-300 rounded-md px-1 focus:outline-none focus:border-[#ae353f]"
                     >
                         <option value="">{currentLng.name}</option>
                         {Languages.map((language, languageIdx) => (
