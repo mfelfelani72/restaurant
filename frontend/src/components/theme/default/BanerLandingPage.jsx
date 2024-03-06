@@ -3,6 +3,11 @@ import { IconOutlineMail1 } from "./icons/IconOutlineMail1";
 import { IconOutlinePhone1 } from "./icons/IconOutlinePhone1";
 import { SlLocationPin } from "react-icons/sl";
 
+import {
+    Typography,
+    Button,
+} from "@material-tailwind/react";
+
 function BanerLandingPage() {
     return (
         <>
@@ -26,8 +31,63 @@ function BanerLandingPage() {
                         </div>
                     </div>
                 </div>
-                <div className='basis-1  px-[12.5rem] md:px-[15rem] lg:px-[20rem] px-f h-[35rem]'>
-                    sadsadsa
+                <div className='relative basis-1  px-[12rem] md:px-[15rem] lg:px-[20rem] px-f h-[35rem]'>
+                    <div className='absolute left-0'>
+                        <div className='flex flex-col'>
+                            <div>
+                                <Typography
+                                    variant="h3"
+                                    color="black"
+                                    className="text-center mt-9 text-3xl md:text-4xl"
+                                >
+                                    We provide healthy food for
+                                    your family.
+                                </Typography>
+                            </div>
+
+                            <div className='mt-5'>
+                                <Typography variant="h6" color="blue-gray" className="m-4">
+                                    Our story began with a vision to create a unique dining experience
+                                    that merges fine dining, exceptional service, and a vibrant ambiance.
+                                    Rooted in city's rich culinary culture, we aim to honor our local roots
+                                    while infusing a global palate.
+                                </Typography>
+                            </div>
+                            <div className='mt-5'>
+                                <Typography variant="" color="blue-gray" className="mx-4 mt-0">
+                                    At place, we believe that dining is not just about food, but also
+                                    about the overall experience. Our staff, renowned for their warmth and
+                                    dedication, strives to make every visit an unforgettable event.
+                                    At place, we believe that dining is not just about food, but also
+                                    about the overall experience. Our staff, renowned for their warmth and
+                                    dedication, strives to make every visit an unforgettable event.
+                                    At place, we believe that dining is not just about food, but also
+                                    about the overall experience. Our staff, renowned for their warmth and
+                                    dedication, strives to make every visit an unforgettable event.
+                                </Typography>
+                            </div>
+                            <Button size="lg" variant="text" className="flex items-center gap-2 bottom-0 text-[#ae353f]">
+                                    Learn More
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        strokeWidth={2}
+                                        stroke="currentColor"
+                                        className="h-4 w-4 "
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                                        />
+                                    </svg>
+                                </Button>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </>
