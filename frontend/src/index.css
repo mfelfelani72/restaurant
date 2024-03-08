@@ -1,14 +1,26 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
 
 
 @media (min-width: 1536px) {
 
-    .px-f{
-        
+    .px-f {
+
         padding-left: 27rem !important;
         padding-right: 27rem !important;
     }
-    
+}
+
+.dla> :not([hidden])~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+}
+
+.abz>:not([hidden])~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }

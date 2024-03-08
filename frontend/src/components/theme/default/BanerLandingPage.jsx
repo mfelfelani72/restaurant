@@ -61,9 +61,7 @@ function BanerLandingPage() {
                                     At place, we believe that dining is not just about food, but also
                                     about the overall experience. Our staff, renowned for their warmth and
                                     dedication, strives to make every visit an unforgettable event.
-                                    At place, we believe that dining is not just about food, but also
-                                    about the overall experience. Our staff, renowned for their warmth and
-                                    dedication, strives to make every visit an unforgettable event.
+                                    
                                 </Typography>
                             </div>
                             <Button size="lg" variant="text" className="flex items-center gap-2 bottom-0 text-[#ae353f]">
