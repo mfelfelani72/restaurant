@@ -24,12 +24,12 @@ function TestmonialLandingPage() {
                 </figure>
                 <div className='abz xl:contents dla'>
                     <div className='xl:row-span-2 abz'>
-                        <figure className='rounded-2xl bg-white/100 p-6  shadow-lg ring ring-gray-100 ring-offset-0'>
+                        <figure className='rounded-2xl mt-4 bg-white/100 p-6  shadow-lg ring ring-gray-100 ring-offset-0'>
                             <blockquote className='text-gray-900/100'>
                                 <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
                             </blockquote>
                             <figcaption className='mt-6 flex items-center gap-x-4'>
-                                <img className='h-10 w-auto flex-none' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
+                                <img className='h-10 w-auto flex-none rounded-[9999px]' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
                                 <div className='flex-auto'>
                                     <div className='font-semibold'>Leslie Alexander</div>
                                     <div className='text-gray-700'>@lesliealexander</div>
@@ -42,7 +42,7 @@ function TestmonialLandingPage() {
                                 <p>“Quia dolorem qui et. Atque quo aliquid sit eos officia. Dolores similique laboriosam quaerat cupiditate.”</p>
                             </blockquote>
                             <figcaption className='mt-6 flex items-center gap-x-4'>
-                                <img className='h-10 w-auto flex-none' src='https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
+                                <img className='h-10 w-auto flex-none rounded-[9999px]' src='https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
                                 <div className='flex-auto'>
                                     <div className='font-semibold'>Michael Foster</div>
                                     <div className='text-gray-700'>@michaelfoster</div>
@@ -55,7 +55,7 @@ function TestmonialLandingPage() {
                                 <p>“Consequatur ut atque. Itaque nostrum molestiae id veniam eos cumque. Ut quia eum fugit laborum autem inventore ut voluptate.”</p>
                             </blockquote>
                             <figcaption className='mt-6 flex items-center gap-x-4'>
-                                <img className='h-10 w-auto flex-none' src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
+                                <img className='h-10 w-auto flex-none rounded-[9999px]' src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
                                 <div className='flex-auto'>
                                     <div className='font-semibold'>Dries Vincent</div>
                                     <div className='text-gray-700'>@driesvincent</div>
@@ -65,12 +65,12 @@ function TestmonialLandingPage() {
                         </figure>
                     </div>
                     <div className='xl:row-start-1 abz'>
-                        <figure className='rounded-2xl bg-white/100 p-6  shadow-lg ring ring-gray-100 ring-offset-0'>
+                        <figure className='rounded-2xl bg-white/100 p-6 shadow-lg ring ring-gray-100 ring-offset-0'>
                             <blockquote className='text-gray-900/100'>
                                 <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
                             </blockquote>
                             <figcaption className='mt-6 flex items-center gap-x-4'>
-                                <img className='h-10 w-auto flex-none' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
+                                <img className='h-10 w-auto flex-none rounded-[9999px]' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
                                 <div className='flex-auto'>
                                     <div className='font-semibold'>Leslie Alexander</div>
                                     <div className='text-gray-700'>@lesliealexander</div>
@@ -78,12 +78,12 @@ function TestmonialLandingPage() {
                             </figcaption>
 
                         </figure>
-                        <figure className='rounded-2xl bg-white/100 p-6  shadow-lg ring ring-gray-100 ring-offset-0'>
+                        <figure className='rounded-2xl bg-white/100 p-6 shadow-lg ring ring-gray-100 ring-offset-0'>
                             <blockquote className='text-gray-900/100'>
                                 <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
                             </blockquote>
                             <figcaption className='mt-6 flex items-center gap-x-4'>
-                                <img className='h-10 w-auto flex-none' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
+                                <img className='h-10 w-auto flex-none rounded-[9999px]' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
                                 <div className='flex-auto'>
                                     <div className='font-semibold'>Leslie Alexander</div>
                                     <div className='text-gray-700'>@lesliealexander</div>
@@ -101,7 +101,7 @@ function TestmonialLandingPage() {
                                 <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
                             </blockquote>
                             <figcaption className='mt-6 flex items-center gap-x-4'>
-                                <img className='h-10 w-auto flex-none' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
+                                <img className='h-10 w-auto flex-none rounded-[9999px]' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
                                 <div className='flex-auto'>
                                     <div className='font-semibold'>Leslie Alexander</div>
                                     <div className='text-gray-700'>@lesliealexander</div>
@@ -114,7 +114,7 @@ function TestmonialLandingPage() {
                                 <p>“Quia dolorem qui et. Atque quo aliquid sit eos officia. Dolores similique laboriosam quaerat cupiditate.”</p>
                             </blockquote>
                             <figcaption className='mt-6 flex items-center gap-x-4'>
-                                <img className='h-10 w-auto flex-none' src='https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
+                                <img className='h-10 w-auto flex-none rounded-[9999px]' src='https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
                                 <div className='flex-auto'>
                                     <div className='font-semibold'>Michael Foster</div>
                                     <div className='text-gray-700'>@michaelfoster</div>
@@ -130,7 +130,7 @@ function TestmonialLandingPage() {
                                 <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
                             </blockquote>
                             <figcaption className='mt-6 flex items-center gap-x-4'>
-                                <img className='h-10 w-auto flex-none' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
+                                <img className='h-10 w-auto flex-none rounded-[9999px]' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
                                 <div className='flex-auto'>
                                     <div className='font-semibold'>Leslie Alexander</div>
                                     <div className='text-gray-700'>@lesliealexander</div>
@@ -143,7 +143,7 @@ function TestmonialLandingPage() {
                                 <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
                             </blockquote>
                             <figcaption className='mt-6 flex items-center gap-x-4'>
-                                <img className='h-10 w-auto flex-none' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
+                                <img className='h-10 w-auto flex-none rounded-[9999px]' src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
                                 <div className='flex-auto'>
                                     <div className='font-semibold'>Leslie Alexander</div>
                                     <div className='text-gray-700'>@lesliealexander</div>
@@ -156,7 +156,7 @@ function TestmonialLandingPage() {
                                 <p>“Consequatur ut atque. Itaque nostrum molestiae id veniam eos cumque. Ut quia eum fugit laborum autem inventore ut voluptate.”</p>
                             </blockquote>
                             <figcaption className='mt-6 flex items-center gap-x-4'>
-                                <img className='h-10 w-auto flex-none' src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
+                                <img className='h-10 w-auto flex-none rounded-[9999px]' src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' />
                                 <div className='flex-auto'>
                                     <div className='font-semibold'>Dries Vincent</div>
                                     <div className='text-gray-700'>@driesvincent</div>
