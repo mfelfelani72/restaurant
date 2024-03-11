@@ -6,6 +6,8 @@ import CarouselTransition from '../../../components/theme/default/CarouselTransi
 import CardLandingPage from '../../../components/theme/default/CardLandingPage';
 import BanerLandingPage from '../../../components/theme/default/BanerLandingPage';
 import TestmonialLandingPage from '../../../components/theme/default/TestmonialLandingPage';
+import EndBanerLandingPage from '../../../components/theme/default/EndBanerLandingPage';
+import Footer from '../../../components/theme/default/Footer';
 
 function LandingPage() {
     return (
@@ -24,6 +26,10 @@ function LandingPage() {
                 <BanerLandingPage />
 
                 <TestmonialLandingPage />
+
+                <EndBanerLandingPage />
+
+                <Footer />
 
 
             </div>

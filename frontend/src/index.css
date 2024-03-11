@@ -12,6 +12,18 @@
     }
 }
 
+@media (max-width: 639px) {
+
+    .ex-sm-footer {
+
+        flex-basis: 100%;
+    }
+
+    .ex-sm-hidden {
+        display: none;
+    }
+}
+
 .dla> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
 
